@@ -2,16 +2,23 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        borderWidth: 1, 
+        flex: 1,
         padding: 10,      
-        width: 300, 
-        marginBottom: 8,
-        alignItems:'center',
+        justifyContent: 'center',
+        backgroundColor:'#e3f2fd',
+        borderRadius: 40,
+        alignItems: 'center',
            
     },  
     titulo: {
         fontSize: 30, 
         fontWeight: 'bold',
+    },
+
+    image:{
+        width: '80%',
+        resizeMode: 'center',
+        
     },
 });
 

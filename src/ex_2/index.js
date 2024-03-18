@@ -1,9 +1,14 @@
-import { View, Text } from "react-native";
+import { View, Text } from 'react-native'; 
 
-export default function mensagem () {
+import styles from './styles';
+
+export default function Mensagem () { 
+
     return(
-        <vieW>
-            <text>hello react-native</text>
-        </vieW>
+        <View style={styles.container}>
+            <Text style={styles.mensagem}>
+                Hello React Native
+            </Text>
+        </View>
     );
 }
