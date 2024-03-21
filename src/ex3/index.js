@@ -1,9 +1,21 @@
-import { View, Text, pressable } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
+
+import styles from './styles';
 
 export default function Exemplo_3 () {
+
+    function mensagem() {
+        alert('aula de react-native');
+    }
     return(
-        <view>
-            <text>Exemplo 3</text>
-        </view>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>Exemplo 3</Text>
+            <TouchableOpacity style={styles.botao} onPress={() => mensagem()}>
+                <Text style={styles.txtbotao}>Botão</Text>
+
+            </TouchableOpacity>
+                
+            
+        </View>
     )
 }
