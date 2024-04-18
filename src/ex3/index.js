@@ -15,7 +15,7 @@ export default function Exemplo_3 () {
 
             </TouchableOpacity>
                 
-            
+            <View style={styles.linha}></View>
         </View>
     )
 }

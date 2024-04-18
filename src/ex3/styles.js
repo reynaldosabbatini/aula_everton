@@ -8,28 +8,17 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         alignItems: 'center',
         padding: 20,
-
     },
+
     titulo: {
         fontSize: 30,
         fontWeight: 'bold',
     },
 
-    botao: {
-        //width: '70%',
-        padding: 10,
-        margin:20,
-        backgroundColor: '#000',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderRadius: 20,
-    },
-
-    txtbotao: {
-        fontSize: 25,
-        color: '#fafafa',
+    
         
-    },
+
+    
 });
 
 export default styles;
