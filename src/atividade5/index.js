@@ -8,24 +8,35 @@ export default function Atividade5() {
     const [isFocusN1, setIsFocusN1] = useState(false);
     const [isFocusN2, setIsFocusN2] = useState(false);
     const [isFocusTotal, setIsFocusTotal] = useState(false);
+    const [sinal, setSinal] = useState ('');
+
     const [n1, setN1] = useState(0);
     const [n2, setN2] = useState(0);
     const [total, setTotal] =useState('');
 
     function soma() {
         setTotal(parseFloat(n1) + parseFloat(n2));
+        setSinal('+')
     }
     function divisao() {
         setTotal(parseFloat(n1) / parseFloat(n2));
+        setSinal('/')
     }
     function subtracao() {
         setTotal(parseFloat(n1) - parseFloat(n2));
+        setSinal('-')
     }
     
-    function MULTIPLICAO() {
+    function multiplicacao() {
         setTotal(parseFloat(n1) * parseFloat(n2));
+        setSinal('*')
     }
 
+    function zerar() {
+      setTotal(0);
+      setN1(0);
+      setN2(0);
+  }
     return (
         <View style={styles.container}>
             <Text style={styles.titulo}> Exemplo 5 </Text>
@@ -148,7 +159,7 @@ export default function Atividade5() {
               </Pressable>
 
               <Pressable
-            onPress={() => SAIR()}
+            onPress={() => zerar()}
             style={
                 ({pressed}) => pressed ?
                 [styles.button, styles.buttonTouch]
@@ -156,7 +167,7 @@ export default function Atividade5() {
                 styles.button
             }
               >
-                <Text style={styles.textButton}>  </Text>
+                <Text style={styles.textButton}> zerar </Text>
               </Pressable>  
   
 

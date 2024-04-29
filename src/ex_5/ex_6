@@ -1,0 +1,17 @@
+
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.creat({
+    imput: {
+        height: 80,
+        texAlign:'center',
+        width: '50%',
+        color: '#eee',
+        fontSize: 50,
+        backgroundColor: '#aaa',
+        borderRadius: 20,
+        marginVertical: 20,
+    },
+});
+
+export default styles;
