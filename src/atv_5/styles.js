@@ -23,37 +23,14 @@ const styles = StyleSheet.create({
       textAlign: 'center', 
       color: '#E91E63',     
     }, 
-    txtEntrada: {
-      borderWidth: 4, 
-      textAlign: 'center', 
-      fontSize: 22, 
-      borderColor: '#E91E63', 
-      // height: 50, 
-      color: '#E53935', 
-      borderRadius: 10, 
-      marginTop: 10, 
-      padding: 10
-    }, 
-    button: {
-      backgroundColor: '#E91E63', 
-      height: 60, 
-      justifyContent: 'center', 
-      borderRadius: 10, 
-      marginTop: 20, 
-      width: '100%', 
-    }, 
-    buttonTouch: {
-        backgroundColor: '#C51162', 
-    }, 
-    textButton: {
-      fontSize: 30, 
-      color: '#FF80AB', 
-      textAlign: 'center', 
-    }, 
     textLabel: {
       fontSize: 16, 
       fontWeight: 'bold', 
       color: '#C51162',     
+    }, 
+    containerBotoes: {
+      flexDirection: 'row', 
+      justifyContent: 'space-between'
     }, 
   });
   
