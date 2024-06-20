@@ -6,7 +6,7 @@ import NavegacaoStack from './src/navegacao/stack';
 export default function App() {
   return (
     <View style={styles.container}>
-      <NavegacaoStack/>
+      <NavegacaoStack />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,8 +16,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'orange',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     padding: 18,
   },
 });
